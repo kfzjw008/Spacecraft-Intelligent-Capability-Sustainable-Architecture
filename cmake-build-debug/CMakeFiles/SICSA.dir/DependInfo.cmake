@@ -8,8 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "D:/lab/c++/SICSA/global.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/global.c.obj"
   "D:/lab/c++/SICSA/main.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/main.c.obj"
+  "D:/lab/c++/SICSA/onboardControlServices/commandParsing.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj"
+  "D:/lab/c++/SICSA/onboardControlServices/dataInjection .c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj"
+  "D:/lab/c++/SICSA/onboardControlServices/eventTable.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj"
+  "D:/lab/c++/SICSA/onboardControlServices/macroInstruction.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj"
+  "D:/lab/c++/SICSA/onboardControlServices/onlineMonitoring.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj"
   "D:/lab/c++/SICSA/test/testConsole.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/test/testConsole.c.obj"
+  "D:/lab/c++/SICSA/util.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/util.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -74,13 +74,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/lab/c++/SICSA/global.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/global.h">
+			<Option target="SICSA"/>
+		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/main.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/commandParsing.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/commandParsing.h">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/dataInjection .c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/dataInjection .h">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/eventTable.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/eventTable.h">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/macroInstruction.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/macroInstruction.h">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/onlineMonitoring.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/onlineMonitoring.h">
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/test/testConsole.c">
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/test/testConsole.h">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/util.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/util.h">
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/CMakeLists.txt">

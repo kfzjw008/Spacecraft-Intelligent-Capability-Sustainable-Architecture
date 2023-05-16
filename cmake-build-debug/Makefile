@@ -128,6 +128,30 @@ SICSA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/build
 .PHONY : SICSA/fast
 
+global.obj: global.c.obj
+.PHONY : global.obj
+
+# target to build an object file
+global.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/global.c.obj
+.PHONY : global.c.obj
+
+global.i: global.c.i
+.PHONY : global.i
+
+# target to preprocess a source file
+global.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/global.c.i
+.PHONY : global.c.i
+
+global.s: global.c.s
+.PHONY : global.s
+
+# target to generate assembly for a file
+global.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/global.c.s
+.PHONY : global.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -151,6 +175,126 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/main.c.s
 .PHONY : main.c.s
+
+onboardControlServices/commandParsing.obj: onboardControlServices/commandParsing.c.obj
+.PHONY : onboardControlServices/commandParsing.obj
+
+# target to build an object file
+onboardControlServices/commandParsing.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj
+.PHONY : onboardControlServices/commandParsing.c.obj
+
+onboardControlServices/commandParsing.i: onboardControlServices/commandParsing.c.i
+.PHONY : onboardControlServices/commandParsing.i
+
+# target to preprocess a source file
+onboardControlServices/commandParsing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i
+.PHONY : onboardControlServices/commandParsing.c.i
+
+onboardControlServices/commandParsing.s: onboardControlServices/commandParsing.c.s
+.PHONY : onboardControlServices/commandParsing.s
+
+# target to generate assembly for a file
+onboardControlServices/commandParsing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s
+.PHONY : onboardControlServices/commandParsing.c.s
+
+onboardControlServices/dataInjection_.obj: onboardControlServices/dataInjection_.c.obj
+.PHONY : onboardControlServices/dataInjection_.obj
+
+# target to build an object file
+onboardControlServices/dataInjection_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj
+.PHONY : onboardControlServices/dataInjection_.c.obj
+
+onboardControlServices/dataInjection_.i: onboardControlServices/dataInjection_.c.i
+.PHONY : onboardControlServices/dataInjection_.i
+
+# target to preprocess a source file
+onboardControlServices/dataInjection_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.i
+.PHONY : onboardControlServices/dataInjection_.c.i
+
+onboardControlServices/dataInjection_.s: onboardControlServices/dataInjection_.c.s
+.PHONY : onboardControlServices/dataInjection_.s
+
+# target to generate assembly for a file
+onboardControlServices/dataInjection_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.s
+.PHONY : onboardControlServices/dataInjection_.c.s
+
+onboardControlServices/eventTable.obj: onboardControlServices/eventTable.c.obj
+.PHONY : onboardControlServices/eventTable.obj
+
+# target to build an object file
+onboardControlServices/eventTable.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj
+.PHONY : onboardControlServices/eventTable.c.obj
+
+onboardControlServices/eventTable.i: onboardControlServices/eventTable.c.i
+.PHONY : onboardControlServices/eventTable.i
+
+# target to preprocess a source file
+onboardControlServices/eventTable.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i
+.PHONY : onboardControlServices/eventTable.c.i
+
+onboardControlServices/eventTable.s: onboardControlServices/eventTable.c.s
+.PHONY : onboardControlServices/eventTable.s
+
+# target to generate assembly for a file
+onboardControlServices/eventTable.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s
+.PHONY : onboardControlServices/eventTable.c.s
+
+onboardControlServices/macroInstruction.obj: onboardControlServices/macroInstruction.c.obj
+.PHONY : onboardControlServices/macroInstruction.obj
+
+# target to build an object file
+onboardControlServices/macroInstruction.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj
+.PHONY : onboardControlServices/macroInstruction.c.obj
+
+onboardControlServices/macroInstruction.i: onboardControlServices/macroInstruction.c.i
+.PHONY : onboardControlServices/macroInstruction.i
+
+# target to preprocess a source file
+onboardControlServices/macroInstruction.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i
+.PHONY : onboardControlServices/macroInstruction.c.i
+
+onboardControlServices/macroInstruction.s: onboardControlServices/macroInstruction.c.s
+.PHONY : onboardControlServices/macroInstruction.s
+
+# target to generate assembly for a file
+onboardControlServices/macroInstruction.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s
+.PHONY : onboardControlServices/macroInstruction.c.s
+
+onboardControlServices/onlineMonitoring.obj: onboardControlServices/onlineMonitoring.c.obj
+.PHONY : onboardControlServices/onlineMonitoring.obj
+
+# target to build an object file
+onboardControlServices/onlineMonitoring.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj
+.PHONY : onboardControlServices/onlineMonitoring.c.obj
+
+onboardControlServices/onlineMonitoring.i: onboardControlServices/onlineMonitoring.c.i
+.PHONY : onboardControlServices/onlineMonitoring.i
+
+# target to preprocess a source file
+onboardControlServices/onlineMonitoring.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i
+.PHONY : onboardControlServices/onlineMonitoring.c.i
+
+onboardControlServices/onlineMonitoring.s: onboardControlServices/onlineMonitoring.c.s
+.PHONY : onboardControlServices/onlineMonitoring.s
+
+# target to generate assembly for a file
+onboardControlServices/onlineMonitoring.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s
+.PHONY : onboardControlServices/onlineMonitoring.c.s
 
 test/testConsole.obj: test/testConsole.c.obj
 .PHONY : test/testConsole.obj
@@ -176,6 +320,30 @@ test/testConsole.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/test/testConsole.c.s
 .PHONY : test/testConsole.c.s
 
+util.obj: util.c.obj
+.PHONY : util.obj
+
+# target to build an object file
+util.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/util.c.obj
+.PHONY : util.c.obj
+
+util.i: util.c.i
+.PHONY : util.i
+
+# target to preprocess a source file
+util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/util.c.i
+.PHONY : util.c.i
+
+util.s: util.c.s
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/util.c.s
+.PHONY : util.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +353,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SICSA
+	@echo ... global.obj
+	@echo ... global.i
+	@echo ... global.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... onboardControlServices/commandParsing.obj
+	@echo ... onboardControlServices/commandParsing.i
+	@echo ... onboardControlServices/commandParsing.s
+	@echo ... onboardControlServices/dataInjection_.obj
+	@echo ... onboardControlServices/dataInjection_.i
+	@echo ... onboardControlServices/dataInjection_.s
+	@echo ... onboardControlServices/eventTable.obj
+	@echo ... onboardControlServices/eventTable.i
+	@echo ... onboardControlServices/eventTable.s
+	@echo ... onboardControlServices/macroInstruction.obj
+	@echo ... onboardControlServices/macroInstruction.i
+	@echo ... onboardControlServices/macroInstruction.s
+	@echo ... onboardControlServices/onlineMonitoring.obj
+	@echo ... onboardControlServices/onlineMonitoring.i
+	@echo ... onboardControlServices/onlineMonitoring.s
 	@echo ... test/testConsole.obj
 	@echo ... test/testConsole.i
 	@echo ... test/testConsole.s
+	@echo ... util.obj
+	@echo ... util.i
+	@echo ... util.s
 .PHONY : help
 
 

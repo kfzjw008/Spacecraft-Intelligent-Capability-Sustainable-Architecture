@@ -1,6 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SICSA.dir/global.c.obj"
   "CMakeFiles/SICSA.dir/main.c.obj"
+  "CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj"
+  "CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj"
+  "CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj"
+  "CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj"
+  "CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj"
   "CMakeFiles/SICSA.dir/test/testConsole.c.obj"
+  "CMakeFiles/SICSA.dir/util.c.obj"
   "SICSA.exe"
   "SICSA.exe.manifest"
   "SICSA.pdb"

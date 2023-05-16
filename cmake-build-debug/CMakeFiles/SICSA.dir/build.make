@@ -91,21 +91,126 @@ CMakeFiles/SICSA.dir/test/testConsole.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/test/testConsole.c.s"
 	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\test\testConsole.c -o CMakeFiles\SICSA.dir\test\testConsole.c.s
 
+CMakeFiles/SICSA.dir/global.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/global.c.obj: ../global.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SICSA.dir/global.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\global.c.obj -c D:\lab\c++\SICSA\global.c
+
+CMakeFiles/SICSA.dir/global.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/global.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\lab\c++\SICSA\global.c > CMakeFiles\SICSA.dir\global.c.i
+
+CMakeFiles/SICSA.dir/global.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/global.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\global.c -o CMakeFiles\SICSA.dir\global.c.s
+
+CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj: ../onboardControlServices/dataInjection\ .c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\onboardControlServices\dataInjection_.c.obj -c "D:\lab\c++\SICSA\onboardControlServices\dataInjection .c"
+
+CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\lab\c++\SICSA\onboardControlServices\dataInjection .c" > CMakeFiles\SICSA.dir\onboardControlServices\dataInjection_.c.i
+
+CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\lab\c++\SICSA\onboardControlServices\dataInjection .c" -o CMakeFiles\SICSA.dir\onboardControlServices\dataInjection_.c.s
+
+CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj: ../onboardControlServices/commandParsing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\onboardControlServices\commandParsing.c.obj -c D:\lab\c++\SICSA\onboardControlServices\commandParsing.c
+
+CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\lab\c++\SICSA\onboardControlServices\commandParsing.c > CMakeFiles\SICSA.dir\onboardControlServices\commandParsing.c.i
+
+CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\onboardControlServices\commandParsing.c -o CMakeFiles\SICSA.dir\onboardControlServices\commandParsing.c.s
+
+CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj: ../onboardControlServices/eventTable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\onboardControlServices\eventTable.c.obj -c D:\lab\c++\SICSA\onboardControlServices\eventTable.c
+
+CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\lab\c++\SICSA\onboardControlServices\eventTable.c > CMakeFiles\SICSA.dir\onboardControlServices\eventTable.c.i
+
+CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\onboardControlServices\eventTable.c -o CMakeFiles\SICSA.dir\onboardControlServices\eventTable.c.s
+
+CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj: ../onboardControlServices/macroInstruction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\onboardControlServices\macroInstruction.c.obj -c D:\lab\c++\SICSA\onboardControlServices\macroInstruction.c
+
+CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\lab\c++\SICSA\onboardControlServices\macroInstruction.c > CMakeFiles\SICSA.dir\onboardControlServices\macroInstruction.c.i
+
+CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\onboardControlServices\macroInstruction.c -o CMakeFiles\SICSA.dir\onboardControlServices\macroInstruction.c.s
+
+CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj: ../onboardControlServices/onlineMonitoring.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\onboardControlServices\onlineMonitoring.c.obj -c D:\lab\c++\SICSA\onboardControlServices\onlineMonitoring.c
+
+CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\lab\c++\SICSA\onboardControlServices\onlineMonitoring.c > CMakeFiles\SICSA.dir\onboardControlServices\onlineMonitoring.c.i
+
+CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\onboardControlServices\onlineMonitoring.c -o CMakeFiles\SICSA.dir\onboardControlServices\onlineMonitoring.c.s
+
+CMakeFiles/SICSA.dir/util.c.obj: CMakeFiles/SICSA.dir/flags.make
+CMakeFiles/SICSA.dir/util.c.obj: ../util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SICSA.dir/util.c.obj"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\SICSA.dir\util.c.obj -c D:\lab\c++\SICSA\util.c
+
+CMakeFiles/SICSA.dir/util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/util.c.i"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\lab\c++\SICSA\util.c > CMakeFiles\SICSA.dir\util.c.i
+
+CMakeFiles/SICSA.dir/util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/util.c.s"
+	"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\lab\c++\SICSA\util.c -o CMakeFiles\SICSA.dir\util.c.s
+
 # Object files for target SICSA
 SICSA_OBJECTS = \
 "CMakeFiles/SICSA.dir/main.c.obj" \
-"CMakeFiles/SICSA.dir/test/testConsole.c.obj"
+"CMakeFiles/SICSA.dir/test/testConsole.c.obj" \
+"CMakeFiles/SICSA.dir/global.c.obj" \
+"CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj" \
+"CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj" \
+"CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj" \
+"CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj" \
+"CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj" \
+"CMakeFiles/SICSA.dir/util.c.obj"
 
 # External object files for target SICSA
 SICSA_EXTERNAL_OBJECTS =
 
 SICSA.exe: CMakeFiles/SICSA.dir/main.c.obj
 SICSA.exe: CMakeFiles/SICSA.dir/test/testConsole.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/global.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj
+SICSA.exe: CMakeFiles/SICSA.dir/util.c.obj
 SICSA.exe: CMakeFiles/SICSA.dir/build.make
 SICSA.exe: CMakeFiles/SICSA.dir/linklibs.rsp
 SICSA.exe: CMakeFiles/SICSA.dir/objects1.rsp
 SICSA.exe: CMakeFiles/SICSA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable SICSA.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\lab\c++\SICSA\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable SICSA.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SICSA.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

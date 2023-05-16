@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/lab/c++/SICSA/test/testConsole.c
+D:/lab/c++/SICSA/main.c
 stdio.h
 -
-stdlib.h
+stdint.h
 -
-time.h
--
-unistd.h
--
-locale.h
--
+test/testConsole.h
+D:/lab/c++/SICSA/test/testConsole.h
+
+D:/lab/c++/SICSA/test/testConsole.h
 
