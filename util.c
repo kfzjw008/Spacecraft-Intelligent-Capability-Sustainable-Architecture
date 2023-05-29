@@ -2,6 +2,8 @@
 // Created by kfzjw008 on 2023-05-16.
 //
 
+#include <stdint.h>
+#include <malloc.h>
 #include "util.h"
 
 
@@ -65,3 +67,4 @@ void setParameterType() {}//	设置参数类型
 void enableMonitoringAction() {}//	使能监视动作
 void disableMonitoringAction() {}//	禁用监视动作
 //到此为止，以上为文档内函数
+

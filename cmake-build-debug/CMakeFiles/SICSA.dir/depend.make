@@ -5,14 +5,17 @@ CMakeFiles/SICSA.dir/global.c.obj: \
  ../global.c \
  ../global.h
 CMakeFiles/SICSA.dir/main.c.obj: \
+ ../global.h \
  ../main.c \
- ../test/testConsole.h
+ ../test/testConsole.h \
+ ../windowsUtil.h
 CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.obj: \
  ../onboardControlServices/commandParsing.c \
  ../onboardControlServices/commandParsing.h
-CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj: \
- ../onboardControlServices/dataInjection\ .c \
- ../onboardControlServices/dataInjection\ .h
+CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.obj: \
+ ../global.h \
+ ../onboardControlServices/dataInjection.c \
+ ../onboardControlServices/dataInjection.h
 CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj: \
  ../onboardControlServices/eventTable.c \
  ../onboardControlServices/eventTable.h
@@ -20,6 +23,7 @@ CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj: \
  ../onboardControlServices/macroInstruction.c \
  ../onboardControlServices/macroInstruction.h
 CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj: \
+ ../global.h \
  ../onboardControlServices/onlineMonitoring.c \
  ../onboardControlServices/onlineMonitoring.h
 CMakeFiles/SICSA.dir/test/testConsole.c.obj: \
@@ -27,3 +31,7 @@ CMakeFiles/SICSA.dir/test/testConsole.c.obj: \
 CMakeFiles/SICSA.dir/util.c.obj: \
  ../util.c \
  ../util.h
+CMakeFiles/SICSA.dir/windowsUtil.c.obj: \
+ ../global.h \
+ ../windowsUtil.c \
+ ../windowsUtil.h

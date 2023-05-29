@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+D:/lab/c++/SICSA/global.h
+stdint.h
+-
+
 D:/lab/c++/SICSA/main.c
 stdio.h
 -
@@ -13,6 +17,12 @@ stdint.h
 -
 test/testConsole.h
 D:/lab/c++/SICSA/test/testConsole.h
+global.h
+D:/lab/c++/SICSA/global.h
+windowsUtil.h
+D:/lab/c++/SICSA/windowsUtil.h
 
 D:/lab/c++/SICSA/test/testConsole.h
+
+D:/lab/c++/SICSA/windowsUtil.h
 

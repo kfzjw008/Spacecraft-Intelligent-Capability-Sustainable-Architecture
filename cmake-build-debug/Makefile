@@ -200,29 +200,29 @@ onboardControlServices/commandParsing.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s
 .PHONY : onboardControlServices/commandParsing.c.s
 
-onboardControlServices/dataInjection_.obj: onboardControlServices/dataInjection_.c.obj
-.PHONY : onboardControlServices/dataInjection_.obj
+onboardControlServices/dataInjection.obj: onboardControlServices/dataInjection.c.obj
+.PHONY : onboardControlServices/dataInjection.obj
 
 # target to build an object file
-onboardControlServices/dataInjection_.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.obj
-.PHONY : onboardControlServices/dataInjection_.c.obj
+onboardControlServices/dataInjection.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.obj
+.PHONY : onboardControlServices/dataInjection.c.obj
 
-onboardControlServices/dataInjection_.i: onboardControlServices/dataInjection_.c.i
-.PHONY : onboardControlServices/dataInjection_.i
+onboardControlServices/dataInjection.i: onboardControlServices/dataInjection.c.i
+.PHONY : onboardControlServices/dataInjection.i
 
 # target to preprocess a source file
-onboardControlServices/dataInjection_.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.i
-.PHONY : onboardControlServices/dataInjection_.c.i
+onboardControlServices/dataInjection.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.i
+.PHONY : onboardControlServices/dataInjection.c.i
 
-onboardControlServices/dataInjection_.s: onboardControlServices/dataInjection_.c.s
-.PHONY : onboardControlServices/dataInjection_.s
+onboardControlServices/dataInjection.s: onboardControlServices/dataInjection.c.s
+.PHONY : onboardControlServices/dataInjection.s
 
 # target to generate assembly for a file
-onboardControlServices/dataInjection_.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection_.c.s
-.PHONY : onboardControlServices/dataInjection_.c.s
+onboardControlServices/dataInjection.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.s
+.PHONY : onboardControlServices/dataInjection.c.s
 
 onboardControlServices/eventTable.obj: onboardControlServices/eventTable.c.obj
 .PHONY : onboardControlServices/eventTable.obj
@@ -344,6 +344,30 @@ util.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/util.c.s
 .PHONY : util.c.s
 
+windowsUtil.obj: windowsUtil.c.obj
+.PHONY : windowsUtil.obj
+
+# target to build an object file
+windowsUtil.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/windowsUtil.c.obj
+.PHONY : windowsUtil.c.obj
+
+windowsUtil.i: windowsUtil.c.i
+.PHONY : windowsUtil.i
+
+# target to preprocess a source file
+windowsUtil.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/windowsUtil.c.i
+.PHONY : windowsUtil.c.i
+
+windowsUtil.s: windowsUtil.c.s
+.PHONY : windowsUtil.s
+
+# target to generate assembly for a file
+windowsUtil.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/windowsUtil.c.s
+.PHONY : windowsUtil.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -362,9 +386,9 @@ help:
 	@echo ... onboardControlServices/commandParsing.obj
 	@echo ... onboardControlServices/commandParsing.i
 	@echo ... onboardControlServices/commandParsing.s
-	@echo ... onboardControlServices/dataInjection_.obj
-	@echo ... onboardControlServices/dataInjection_.i
-	@echo ... onboardControlServices/dataInjection_.s
+	@echo ... onboardControlServices/dataInjection.obj
+	@echo ... onboardControlServices/dataInjection.i
+	@echo ... onboardControlServices/dataInjection.s
 	@echo ... onboardControlServices/eventTable.obj
 	@echo ... onboardControlServices/eventTable.i
 	@echo ... onboardControlServices/eventTable.s
@@ -380,6 +404,9 @@ help:
 	@echo ... util.obj
 	@echo ... util.i
 	@echo ... util.s
+	@echo ... windowsUtil.obj
+	@echo ... windowsUtil.i
+	@echo ... windowsUtil.s
 .PHONY : help
 
 

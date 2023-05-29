@@ -83,16 +83,19 @@
 		<Unit filename="D:/lab/c++/SICSA/main.c">
 			<Option target="SICSA"/>
 		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/main.h">
+			<Option target="SICSA"/>
+		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/commandParsing.c">
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/commandParsing.h">
 			<Option target="SICSA"/>
 		</Unit>
-		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/dataInjection .c">
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/dataInjection.c">
 			<Option target="SICSA"/>
 		</Unit>
-		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/dataInjection .h">
+		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/dataInjection.h">
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/onboardControlServices/eventTable.c">
@@ -123,6 +126,12 @@
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/util.h">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/windowsUtil.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/windowsUtil.h">
 			<Option target="SICSA"/>
 		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/CMakeLists.txt">
