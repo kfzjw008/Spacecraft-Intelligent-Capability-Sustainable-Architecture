@@ -26,12 +26,12 @@
 
 
 uint8_t g_InjectionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包缓冲区
+uint8_t g_InjectionPacketBufferCheckFlag[MAX_INJECT_BUFFER_NUM];//注入包检查启用标志，0为未检查，1为合法，2为包格式不正确
 uint16_t g_InjectionPacketBufferFlag[MAX_INJECT_BUFFER_NUM];/*注入包接收标志，AA为任务规划部件已处理，55为已接收待任务规划部件处理*/
 uint16_t g_packetHeaderLength;//	包头长度
 uint16_t g_packetFooterLength;//	包尾长度
 uint16_t g_InjectionPacketBufferNum;//	注入包计数
 uint16_t g_dataInjectionFlag;//	数据注入操作标识
-uint16_t g_InjectionPacketBufferCheckFlag;//	注入包检查标识
 uint16_t packageSequenceIdentifier;//	包序号标识
 uint16_t g_injectionPacketRxCount;//	注入包接收计数
 uint16_t g_injectionFrameRxCount;//	注入帧接收计数

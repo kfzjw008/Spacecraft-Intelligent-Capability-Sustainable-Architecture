@@ -125,21 +125,168 @@ instructionPacketGeneration(uint8_t verison, uint8_t packetType, uint8_t flag, u
 
 /***********************************************************
 程序名称：
+功能描述： 包正确性
+输入参数：
+输出参数：指令包
+说    明：对缓冲区的数据展开相关检查
+ #define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址
+#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址
+***********************************************************/
+int packageValidity(uint32_t n_ui32VarT1MIEn) {
+    uint16_t n_ui16VarT1MIEn1 = inpDw(n_ui32VarT1MIEn + 0) & 0xFFFF;
+    uint16_t n_ui16VarT1MIEn2 = inpDw(n_ui32VarT1MIEn + 2) & 0xFFFF;
+    uint16_t n_ui16VarT1MIEn3 = inpDw(n_ui32VarT1MIEn + 4) & 0xFFFF;
+    // 解析包版本号
+    uint8_t version = n_ui16VarT1MIEn1 >> 13;
+    // 解析包类型
+    uint8_t packetType = (n_ui16VarT1MIEn1 >> 12) & 0b0001;
+    // 解析副导头标志
+    uint8_t secondaryHeaderFlag = (n_ui16VarT1MIEn1 >> 11) & 0b00001;
+    // 解析应用过程标识符
+    uint16_t applicationProcessID = n_ui16VarT1MIEn1 & 0b0000011111111111;
+    //解析序列标志
+    uint8_t sequenceFlag = n_ui16VarT1MIEn2 >> 14;
+    // 解析包序列计数
+    uint16_t sequenceCount = n_ui16VarT1MIEn2 & 0b0011111111111111;
+    // 解析包数据长度
+    uint16_t Psize = n_ui16VarT1MIEn3 & 0b1111111111111111;
+
+    if (version != 0b000) {
+        return 1;
+    }
+    if (packetType != 0b1) {
+        return 1;
+    }
+    if (secondaryHeaderFlag != 0b0) {
+        return 1;
+    }
+    if (applicationProcessID != 0b0001001100110100) {
+        return 1;
+    }
+    if (sequenceFlag >= 4) {
+        return 1;
+    }
+    return 0;
+}
+
+/***********************************************************
+程序名称：
+功能描述： 包唯一性
+输入参数：
+输出参数：指令包
+说    明：对缓冲区的数据展开相关检查
+ #define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址
+#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址
+***********************************************************/
+int packageUniqueness(uint32_t n_ui32VarT1MIEn) {
+    uint16_t sequenceCounts[MAX_INJECT_BUFFER_NUM];
+    int i = 0;
+    for (n_ui32VarT1MIEn = ((uint32_t) (MONI_ZRB_STR_ADRS)); n_ui32VarT1MIEn < ((uint32_t) (MONI_ZRB_END_ADRS));) {
+        if (i == g_InjectionPacketBufferNum) {
+            break;
+        }
+        uint16_t n_ui16VarT1MIEn1 = inpDw(n_ui32VarT1MIEn + 0) & 0xFFFF;
+        uint16_t n_ui16VarT1MIEn2 = inpDw(n_ui32VarT1MIEn + 2) & 0xFFFF;
+        uint16_t n_ui16VarT1MIEn3 = inpDw(n_ui32VarT1MIEn + 4) & 0xFFFF;
+
+        // 解析包序列计数
+        uint16_t sequenceCount = n_ui16VarT1MIEn2 & 0b0011111111111111;
+        sequenceCounts[i] = sequenceCount;
+        i = i + 1;
+        n_ui32VarT1MIEn = n_ui32VarT1MIEn + MAX_INJECT_PKG_LEN;
+    }
+    for (n_ui32VarT1MIEn = ((uint32_t) (MONI_ZRB_STR_ADRS)); n_ui32VarT1MIEn < ((uint32_t) (MONI_ZRB_END_ADRS));) {
+        if (i == g_InjectionPacketBufferNum) {
+            break;
+        }
+        uint16_t n_ui16VarT1MIEn1 = inpDw(n_ui32VarT1MIEn + 0) & 0xFFFF;
+        uint16_t n_ui16VarT1MIEn2 = inpDw(n_ui32VarT1MIEn + 2) & 0xFFFF;
+        uint16_t n_ui16VarT1MIEn3 = inpDw(n_ui32VarT1MIEn + 4) & 0xFFFF;
+        // 解析包版本号
+        uint8_t version = n_ui16VarT1MIEn1 >> 13;
+        // 解析包类型
+        uint8_t packetType = (n_ui16VarT1MIEn1 >> 12) & 0b0001;
+        // 解析副导头标志
+        uint8_t secondaryHeaderFlag = (n_ui16VarT1MIEn1 >> 11) & 0b00001;
+        // 解析应用过程标识符
+        uint16_t applicationProcessID = n_ui16VarT1MIEn1 & 0b0000011111111111;
+        //解析序列标志
+        uint8_t sequenceFlag = n_ui16VarT1MIEn2 >> 14;
+        // 解析包序列计数
+        uint16_t sequenceCount = n_ui16VarT1MIEn2 & 0b0011111111111111;
+        // 解析包数据长度
+        uint16_t Psize = n_ui16VarT1MIEn3 & 0b1111111111111111;
+
+
+        for (int ii = 0; ii < g_InjectionPacketBufferNum; ii++) {
+            if (sequenceCounts[ii] == sequenceCount && ii != i && ii < i) {
+                g_InjectionPacketBufferCheckFlag[ii] = 2;
+            }
+        }
+        i = i + 1;
+        n_ui32VarT1MIEn = n_ui32VarT1MIEn + MAX_INJECT_PKG_LEN;
+    }
+}
+
+/***********************************************************
+程序名称：
+功能描述： 包合法性
+输入参数：
+输出参数：指令包
+说    明：对缓冲区的数据展开相关检查
+ #define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址
+#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址
+***********************************************************/
+int packageLegitimacy(uint32_t n_ui32VarT1MIEn) { return 0; }
+
+/***********************************************************
+程序名称：
+功能描述： 包相关性
+输入参数：
+输出参数：指令包
+说    明：对缓冲区的数据展开相关检查
+ #define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址
+#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址
+***********************************************************/
+int packageRelevance(uint32_t n_ui32VarT1MIEn) { return 0; }
+
+/***********************************************************
+程序名称：
 功能描述： 注入包检查
 输入参数：
 输出参数：指令包
 说    明：对缓冲区的数据展开相关检查
- #define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址*/
-#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址*/
+ #define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址
+#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址
 ***********************************************************/
-void injectionPacketInspection(){
+void injectionPacketInspection() {
 //g_InjectionPacketBuffer
+//uint8_t g_InjectionPacketBufferCheckFlag[MAX_INJECT_BUFFER_NUM];
     uint32_t n_ui32VarT1MIEn = 0; /*4字节变量-遍历参数监控表for循环*/
-    for(n_ui32VarT1MIEn = ((uint32_t)(MONI_ZRB_STR_ADRS)); n_ui32VarT1MIEn < ((uint32_t)(MONI_ZRB_END_ADRS)); ){
-//n_ui16VarT1MIEn = inpDw(n_ui32VarT1MIEn) & 0x0000FFFF
+    int i = 0;
+    packageUniqueness(n_ui32VarT1MIEn);
+    packageLegitimacy(n_ui32VarT1MIEn);
+    packageRelevance(n_ui32VarT1MIEn);
+    for (n_ui32VarT1MIEn = ((uint32_t) (MONI_ZRB_STR_ADRS)); n_ui32VarT1MIEn < ((uint32_t) (MONI_ZRB_END_ADRS));) {
+        if (i == g_InjectionPacketBufferNum) {
+            break;
+        }
+        int i1 = packageValidity(n_ui32VarT1MIEn);
 
 
+        if (i1 > 0) {
+            g_InjectionPacketBufferCheckFlag[i] = 2;
+        } else {
+            g_InjectionPacketBufferCheckFlag[i] = 1;
+        }
 
-        n_ui32VarT1MIEn = n_ui32VarT1MIEn +MAX_INJECT_PKG_LEN;
+        uint16_t n_ui16VarT1MIEn = inpDw(n_ui32VarT1MIEn) & 0xFFFF;
+
+        i = i + 1;
+
+        n_ui32VarT1MIEn = n_ui32VarT1MIEn + MAX_INJECT_PKG_LEN;
     }
+
 }
+
+
