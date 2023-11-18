@@ -122,6 +122,12 @@
 		<Unit filename="D:/lab/c++/SICSA/test/testConsole.h">
 			<Option target="SICSA"/>
 		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/test/testMacro.c">
+			<Option target="SICSA"/>
+		</Unit>
+		<Unit filename="D:/lab/c++/SICSA/test/testMacro.h">
+			<Option target="SICSA"/>
+		</Unit>
 		<Unit filename="D:/lab/c++/SICSA/util.c">
 			<Option target="SICSA"/>
 		</Unit>

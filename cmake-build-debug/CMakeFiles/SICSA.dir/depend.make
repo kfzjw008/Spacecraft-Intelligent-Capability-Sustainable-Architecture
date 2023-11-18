@@ -20,6 +20,7 @@ CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.obj: \
  ../onboardControlServices/eventTable.c \
  ../onboardControlServices/eventTable.h
 CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj: \
+ ../global.h \
  ../onboardControlServices/macroInstruction.c \
  ../onboardControlServices/macroInstruction.h
 CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj: \
@@ -28,6 +29,11 @@ CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj: \
  ../onboardControlServices/onlineMonitoring.h
 CMakeFiles/SICSA.dir/test/testConsole.c.obj: \
  ../test/testConsole.c
+CMakeFiles/SICSA.dir/test/testMacro.c.obj: \
+ ../onboardControlServices/macroInstruction.h \
+ ../test/testMacro.c \
+ ../test/testMacro.h \
+ ../util.h
 CMakeFiles/SICSA.dir/util.c.obj: \
  ../util.c \
  ../util.h

@@ -24,6 +24,23 @@
 #define        MAX_PLAN_CMD_LEN            (50)        /*转发任务规划单条最大长度字数，原转发1553BC立即指令*/
 #define        MAX_MONI_CMD_LEN            (64)        /*转发在线监控立即指令单条最大长度字数*/
 
+//宏指令相关
+#define    MACR_TAB_STR_ADRS            (0x00010000+MEMORY)    /*宏指令库表起始地址*/
+#define    MACR_TAB_END_ADRS            (0x00011FFF+MEMORY)    /*宏指令库表结束地址*/
+#define    MACR_LSH_STR_ADRS            (0x00012000+MEMORY)    /*宏指令库表起始地址*/
+#define    MACR_LSH_END_ADRS            (0x00013FFF+MEMORY)    /*宏指令库表结束地址*/
+#define    MACR_HSJ_STR_ADRS            (0x00014000+MEMORY)    /*宏指令库表起始地址*/
+#define    MACR_HSJ_END_ADRS            (0x00015FFF+MEMORY)    /*宏指令库表结束地址*/
+#define    MACR_HCX_STR_ADRS            (0x00016000+MEMORY)    /*宏指令库表起始地址*/
+#define    MACR_HCX_END_ADRS            (0x00017FFF+MEMORY)    /*宏指令库表结束地址*/
+#define MAX_MACRO_LENGTH 100 // 每条宏指令的最大长度
+#define MACRO_INSTRUCTION_COUNT 81 // 宏指令库可以存储的宏指令数量
+uint16_t g_macroInstructionTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH]; // 宏指令库（宏序列）
+uint8_t g_temporaryMacroTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH]; // 临时宏表
+uint8_t g_macroDataTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH];     // 宏数据表
+uint8_t g_macroProgramTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH];   // 宏程序表
+
+
 
 uint8_t g_InjectionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包缓冲区
 uint8_t g_InjectionPacketBufferCheckFlag[MAX_INJECT_BUFFER_NUM];//注入包检查启用标志，0为未检查，1为合法，2为包格式不正确
@@ -54,7 +71,8 @@ uint16_t g_pendingEventCount;//	待执行事件计数
 uint16_t g_appendedEventCount;//	追加事件计数
 uint16_t g_currentEventItemID;//	当前事件项ID
 uint16_t g_eventCount;//	事件表项数
-uint16_t g_macroInstructionTable;//	宏指令库
+
+
 uint16_t g_macroInstructionLookupTable_SE;//	宏指令检索表-序列
 uint16_t g_MacroInstructionCount;//	宏指令个数
 uint16_t g_NextAvailableMacroInstructionNumber;//	下一个可分配的宏指令序号

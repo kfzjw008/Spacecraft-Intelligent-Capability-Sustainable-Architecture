@@ -68,3 +68,12 @@ void enableMonitoringAction() {}//	使能监视动作
 void disableMonitoringAction() {}//	禁用监视动作
 //到此为止，以上为文档内函数
 
+
+// 计算宏指令内容的校验和
+uint8_t calculateChecksum(uint8_t *content, uint16_t length) {
+    uint8_t checksum = 0;
+    for (uint16_t i = 0; i < length; i++) {
+        checksum += content[i];
+    }
+    return checksum;
+}

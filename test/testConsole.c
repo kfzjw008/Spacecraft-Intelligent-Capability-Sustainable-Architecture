@@ -16,7 +16,7 @@ int func2(int a, int b) {
     return a * b;
 }
 
-int main2() {
+int main23() {
     int counter = 0;
     while (1) {
         // 定期输出计数器的值

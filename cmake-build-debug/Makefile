@@ -320,6 +320,30 @@ test/testConsole.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/test/testConsole.c.s
 .PHONY : test/testConsole.c.s
 
+test/testMacro.obj: test/testMacro.c.obj
+.PHONY : test/testMacro.obj
+
+# target to build an object file
+test/testMacro.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/test/testMacro.c.obj
+.PHONY : test/testMacro.c.obj
+
+test/testMacro.i: test/testMacro.c.i
+.PHONY : test/testMacro.i
+
+# target to preprocess a source file
+test/testMacro.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/test/testMacro.c.i
+.PHONY : test/testMacro.c.i
+
+test/testMacro.s: test/testMacro.c.s
+.PHONY : test/testMacro.s
+
+# target to generate assembly for a file
+test/testMacro.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SICSA.dir\build.make CMakeFiles/SICSA.dir/test/testMacro.c.s
+.PHONY : test/testMacro.c.s
+
 util.obj: util.c.obj
 .PHONY : util.obj
 
@@ -401,6 +425,9 @@ help:
 	@echo ... test/testConsole.obj
 	@echo ... test/testConsole.i
 	@echo ... test/testConsole.s
+	@echo ... test/testMacro.obj
+	@echo ... test/testMacro.i
+	@echo ... test/testMacro.s
 	@echo ... util.obj
 	@echo ... util.i
 	@echo ... util.s

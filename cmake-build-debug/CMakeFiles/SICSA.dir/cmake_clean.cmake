@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj"
   "CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj"
   "CMakeFiles/SICSA.dir/test/testConsole.c.obj"
+  "CMakeFiles/SICSA.dir/test/testMacro.c.obj"
   "CMakeFiles/SICSA.dir/util.c.obj"
   "CMakeFiles/SICSA.dir/windowsUtil.c.obj"
   "SICSA.exe"

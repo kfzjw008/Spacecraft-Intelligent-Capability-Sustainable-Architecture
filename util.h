@@ -4,5 +4,5 @@
 
 #ifndef SICSA_UTIL_H
 #define SICSA_UTIL_H
-
+uint8_t calculateChecksum(uint8_t *content, uint16_t length);
 #endif //SICSA_UTIL_H

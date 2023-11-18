@@ -34,6 +34,7 @@ int main() {
     printf("Online monitoring first address= 0x%08X \n", MONI_TAB_STR_ADRS);
     outpDw(2, 0x2E);
     printf("inpDw Test = %d ", inpDw(2));
+    main2();
     //哪吒架构第一行代码
     return 0;
 }

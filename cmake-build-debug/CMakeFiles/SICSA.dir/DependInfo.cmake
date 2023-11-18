@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/lab/c++/SICSA/onboardControlServices/macroInstruction.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.obj"
   "D:/lab/c++/SICSA/onboardControlServices/onlineMonitoring.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.obj"
   "D:/lab/c++/SICSA/test/testConsole.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/test/testConsole.c.obj"
+  "D:/lab/c++/SICSA/test/testMacro.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/test/testMacro.c.obj"
   "D:/lab/c++/SICSA/util.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/util.c.obj"
   "D:/lab/c++/SICSA/windowsUtil.c" "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir/windowsUtil.c.obj"
   )
