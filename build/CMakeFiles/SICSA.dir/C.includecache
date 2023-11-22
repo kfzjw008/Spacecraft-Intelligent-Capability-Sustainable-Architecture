@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/CodeCpp/nezha/CISCA2023/global.h
+stdint.h
+-
+
+/root/CodeCpp/nezha/CISCA2023/main.c
+stdio.h
+-
+stdint.h
+-
+test/testConsole.h
+/root/CodeCpp/nezha/CISCA2023/test/testConsole.h
+global.h
+/root/CodeCpp/nezha/CISCA2023/global.h
+windowsUtil.h
+/root/CodeCpp/nezha/CISCA2023/windowsUtil.h
+
+/root/CodeCpp/nezha/CISCA2023/test/testConsole.h
+
+/root/CodeCpp/nezha/CISCA2023/windowsUtil.h
+
