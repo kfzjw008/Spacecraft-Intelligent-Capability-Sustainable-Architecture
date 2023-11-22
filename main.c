@@ -28,8 +28,10 @@
 
 int main() {
     //FF为1字节，uint16_t代表着占用2字节，uint8_t占用1字节。
+
     printf("fr分支");
-    printf("Hello,CISCA!!!!!!!环境测试成功\n", sizeof(uint8_t));
+    printf("Hello,CISCA!!!!!!!环境测试\n", sizeof(uint8_t));
+
     mallocInit();//windows专用
     printf("First address of the virtual space= 0x%08X \n", MEMORY);
     printf("Online monitoring first address= 0x%08X \n", MONI_TAB_STR_ADRS);
