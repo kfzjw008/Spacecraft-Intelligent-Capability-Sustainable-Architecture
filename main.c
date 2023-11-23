@@ -24,21 +24,21 @@
  *
  * */
 
-
-
-int main() {
-    //FF为1字节，uint16_t代表着占用2字节，uint8_t占用1字节。
-    printf("Hello,CISCA!!!!!!!环境测试\n", sizeof(uint8_t));
-    mallocInit();//windows专用
+int main()
+{
+    // FF为1字节，uint16_t代表着占用2字节，uint8_t占用1字节。
+    printf("run code终于成功了！！！！！新的Hello,CISCA!!!!!!!环境测试\n", sizeof(uint8_t));
+    mallocInit(); // windows专用
     printf("First address of the virtual space= 0x%08X \n", MEMORY);
     printf("Online monitoring first address= 0x%08X \n", MONI_TAB_STR_ADRS);
     outpDw(2, 0x2E);
-    printf("inpDw Test = %d ", inpDw(2));
+    printf("inpDw Test = %d \n", inpDw(2));
     main2();
-    //哪吒架构第一行代码
+    // 哪吒架构第一行代码
     return 0;
 }
 
-void maininit(){
-    g_InjectionPacketBufferNum=0;
+void maininit()
+{
+    g_InjectionPacketBufferNum = 0;
 }
