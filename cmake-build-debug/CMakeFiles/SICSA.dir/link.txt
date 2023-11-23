@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\SICSA.dir/objects.a
-"D:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\SICSA.dir/objects.a @CMakeFiles\SICSA.dir\objects1.rsp
-"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe" -g -Wl,--whole-archive CMakeFiles\SICSA.dir/objects.a -Wl,--no-whole-archive -o SICSA.exe -Wl,--out-implib,libSICSA.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SICSA.dir\linklibs.rsp

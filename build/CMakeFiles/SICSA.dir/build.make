@@ -60,145 +60,145 @@ include CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/main.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/main.c.o: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SICSA.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/main.c.o   -c /root/CodeCpp/nezha/CISCA2023/main.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/main.c.o   -c /root/CodeCpp/nezha/CISCA2023/main.c
 
 CMakeFiles/SICSA.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/main.c > CMakeFiles/SICSA.dir/main.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/main.c > CMakeFiles/SICSA.dir/main.c.i
 
 CMakeFiles/SICSA.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/main.c -o CMakeFiles/SICSA.dir/main.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/main.c -o CMakeFiles/SICSA.dir/main.c.s
 
 CMakeFiles/SICSA.dir/test/testConsole.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/test/testConsole.c.o: ../test/testConsole.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SICSA.dir/test/testConsole.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/test/testConsole.c.o   -c /root/CodeCpp/nezha/CISCA2023/test/testConsole.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/test/testConsole.c.o   -c /root/CodeCpp/nezha/CISCA2023/test/testConsole.c
 
 CMakeFiles/SICSA.dir/test/testConsole.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/test/testConsole.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/test/testConsole.c > CMakeFiles/SICSA.dir/test/testConsole.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/test/testConsole.c > CMakeFiles/SICSA.dir/test/testConsole.c.i
 
 CMakeFiles/SICSA.dir/test/testConsole.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/test/testConsole.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/test/testConsole.c -o CMakeFiles/SICSA.dir/test/testConsole.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/test/testConsole.c -o CMakeFiles/SICSA.dir/test/testConsole.c.s
 
 CMakeFiles/SICSA.dir/global.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/global.c.o: ../global.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SICSA.dir/global.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/global.c.o   -c /root/CodeCpp/nezha/CISCA2023/global.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/global.c.o   -c /root/CodeCpp/nezha/CISCA2023/global.c
 
 CMakeFiles/SICSA.dir/global.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/global.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/global.c > CMakeFiles/SICSA.dir/global.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/global.c > CMakeFiles/SICSA.dir/global.c.i
 
 CMakeFiles/SICSA.dir/global.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/global.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/global.c -o CMakeFiles/SICSA.dir/global.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/global.c -o CMakeFiles/SICSA.dir/global.c.s
 
 CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.o: ../onboardControlServices/dataInjection.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/dataInjection.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/dataInjection.c
 
 CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/dataInjection.c > CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/dataInjection.c > CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.i
 
 CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/dataInjection.c -o CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/dataInjection.c -o CMakeFiles/SICSA.dir/onboardControlServices/dataInjection.c.s
 
 CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.o: ../onboardControlServices/commandParsing.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/commandParsing.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/commandParsing.c
 
 CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/commandParsing.c > CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/commandParsing.c > CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.i
 
 CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/commandParsing.c -o CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/commandParsing.c -o CMakeFiles/SICSA.dir/onboardControlServices/commandParsing.c.s
 
 CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.o: ../onboardControlServices/eventTable.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/eventTable.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/eventTable.c
 
 CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/eventTable.c > CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/eventTable.c > CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.i
 
 CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/eventTable.c -o CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/eventTable.c -o CMakeFiles/SICSA.dir/onboardControlServices/eventTable.c.s
 
 CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.o: ../onboardControlServices/macroInstruction.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/macroInstruction.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/macroInstruction.c
 
 CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/macroInstruction.c > CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/macroInstruction.c > CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.i
 
 CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/macroInstruction.c -o CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/macroInstruction.c -o CMakeFiles/SICSA.dir/onboardControlServices/macroInstruction.c.s
 
 CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.o: ../onboardControlServices/onlineMonitoring.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/onlineMonitoring.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.o   -c /root/CodeCpp/nezha/CISCA2023/onboardControlServices/onlineMonitoring.c
 
 CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/onlineMonitoring.c > CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/onboardControlServices/onlineMonitoring.c > CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.i
 
 CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/onlineMonitoring.c -o CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/onboardControlServices/onlineMonitoring.c -o CMakeFiles/SICSA.dir/onboardControlServices/onlineMonitoring.c.s
 
 CMakeFiles/SICSA.dir/util.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/util.c.o: ../util.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SICSA.dir/util.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/util.c.o   -c /root/CodeCpp/nezha/CISCA2023/util.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/util.c.o   -c /root/CodeCpp/nezha/CISCA2023/util.c
 
 CMakeFiles/SICSA.dir/util.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/util.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/util.c > CMakeFiles/SICSA.dir/util.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/util.c > CMakeFiles/SICSA.dir/util.c.i
 
 CMakeFiles/SICSA.dir/util.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/util.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/util.c -o CMakeFiles/SICSA.dir/util.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/util.c -o CMakeFiles/SICSA.dir/util.c.s
 
 CMakeFiles/SICSA.dir/windowsUtil.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/windowsUtil.c.o: ../windowsUtil.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/SICSA.dir/windowsUtil.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/windowsUtil.c.o   -c /root/CodeCpp/nezha/CISCA2023/windowsUtil.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/windowsUtil.c.o   -c /root/CodeCpp/nezha/CISCA2023/windowsUtil.c
 
 CMakeFiles/SICSA.dir/windowsUtil.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/windowsUtil.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/windowsUtil.c > CMakeFiles/SICSA.dir/windowsUtil.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/windowsUtil.c > CMakeFiles/SICSA.dir/windowsUtil.c.i
 
 CMakeFiles/SICSA.dir/windowsUtil.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/windowsUtil.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/windowsUtil.c -o CMakeFiles/SICSA.dir/windowsUtil.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/windowsUtil.c -o CMakeFiles/SICSA.dir/windowsUtil.c.s
 
 CMakeFiles/SICSA.dir/test/testMacro.c.o: CMakeFiles/SICSA.dir/flags.make
 CMakeFiles/SICSA.dir/test/testMacro.c.o: ../test/testMacro.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/SICSA.dir/test/testMacro.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/test/testMacro.c.o   -c /root/CodeCpp/nezha/CISCA2023/test/testMacro.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SICSA.dir/test/testMacro.c.o   -c /root/CodeCpp/nezha/CISCA2023/test/testMacro.c
 
 CMakeFiles/SICSA.dir/test/testMacro.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SICSA.dir/test/testMacro.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/test/testMacro.c > CMakeFiles/SICSA.dir/test/testMacro.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/CodeCpp/nezha/CISCA2023/test/testMacro.c > CMakeFiles/SICSA.dir/test/testMacro.c.i
 
 CMakeFiles/SICSA.dir/test/testMacro.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SICSA.dir/test/testMacro.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/test/testMacro.c -o CMakeFiles/SICSA.dir/test/testMacro.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/CodeCpp/nezha/CISCA2023/test/testMacro.c -o CMakeFiles/SICSA.dir/test/testMacro.c.s
 
 # Object files for target SICSA
 SICSA_OBJECTS = \

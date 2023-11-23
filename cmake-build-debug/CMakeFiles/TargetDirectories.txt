@@ -1,3 +1,0 @@
-D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/SICSA.dir
-D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
