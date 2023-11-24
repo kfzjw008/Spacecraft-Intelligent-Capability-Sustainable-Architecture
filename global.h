@@ -40,7 +40,13 @@ uint8_t g_temporaryMacroTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH]; // 临
 uint8_t g_macroDataTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH];     // 宏数据表
 uint8_t g_macroProgramTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH];   // 宏程序表
 
+//事件表相关
+#define    EVENT_TAB_STR_ADRS            (0x00020000+MEMORY)    /*事件项表起始地址*/
+#define    EVENT_TAB_END_ADRS            (0x00021FFF+MEMORY)    /*事件项表结束地址*/
+#define    EVENT_SEA_STR_ADRS            (0x00022000+MEMORY)    /*事件检索表起始地址*/
+#define    EVENT_SEA_END_ADRS            (0x00022FFF+MEMORY)    /*事件检索表结束地址*/
 
+#define    EVENT_TO_INSEXE_ADRS            (0x00030000+MEMORY)    /*事件表业务将指令提交到指令动作业务的地址*/
 
 uint8_t g_InjectionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包缓冲区
 uint8_t g_InjectionPacketBufferCheckFlag[MAX_INJECT_BUFFER_NUM];//注入包检查启用标志，0为未检查，1为合法，2为包格式不正确
