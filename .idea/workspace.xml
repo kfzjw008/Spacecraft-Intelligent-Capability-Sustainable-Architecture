@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dadb0f88-eb05-4032-a1ba-1c0cccfdc3ba" name="Changes" comment="宏指令业务除维护外其他的数据注入指令（未测试）。">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-    </list>
+    <list default="true" id="dadb0f88-eb05-4032-a1ba-1c0cccfdc3ba" name="Changes" comment="宏指令业务除维护外其他的数据注入指令（未测试）。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +60,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.SICSA">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SICSA" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SICSA" TARGET_NAME="SICSA" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SICSA" RUN_TARGET_NAME="SICSA">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -106,7 +108,7 @@
       <workItem from="1696925382891" duration="858000" />
       <workItem from="1700279842052" duration="14193000" />
       <workItem from="1700566543257" duration="1370000" />
-      <workItem from="1701018900996" duration="716000" />
+      <workItem from="1701018900996" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1684217886949</created>
@@ -164,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700298599185</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="宏指令业务除维护外其他的数据注入指令（未测试）。">
+      <created>1701027252400</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701027252400</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
