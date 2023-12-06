@@ -1,0 +1,151 @@
+The system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/CodeBlocks/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8c3d8/fast && D:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8c3d8.dir\build.make CMakeFiles/cmTC_8c3d8.dir/build
+mingw32-make.exe[1]: Entering directory `D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c3d8.dir/CMakeCCompilerABI.c.obj
+"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"   -v -o CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj -c "D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
+Using built-in specs.
+Target: mingw32
+Configured with: ../../gcc-4.4.1/configure --prefix=/mingw --build=mingw32 --enable-languages=c,ada,c++,fortran,objc,obj-c++ --disable-nls --disable-win32-registry --enable-libgomp --enable-cxx-flags='-fno-function-sections -fno-data-sections' --disable-werror --enable-threads --disable-symvers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --with-pkgversion='TDM-2 mingw32' --enable-sjlj-exceptions --with-bugurl=http://www.tdragon.net/recentgcc/bugs.php
+Thread model: win32
+gcc version 4.4.1 (TDM-2 mingw32) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=i386'
+ d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/cc1.exe -quiet -v -iprefix d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/ D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\share\cmake-3.20\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=i386 -auxbase-strip CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\kfzjw008\AppData\Local\Temp\ccHrJnD6.s
+ignoring nonexistent directory "d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/../../../../mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+ignoring duplicate directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../include"
+ignoring duplicate directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../lib/gcc/mingw32/4.4.1/include"
+ignoring duplicate directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../lib/gcc/mingw32/4.4.1/include-fixed"
+ignoring nonexistent directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../lib/gcc/mingw32/4.4.1/../../../../mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/../../../../include
+ d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/include
+ d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/include-fixed
+End of search list.
+GNU C (TDM-2 mingw32) version 4.4.1 (mingw32)
+	compiled by GNU C version 4.4.1, GMP version 4.3.0, MPFR version 2.4.1.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: cf55188e7d2f640bec71afc62bf8d59d
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=i386'
+ d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/bin/as.exe -o CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj C:\Users\kfzjw008\AppData\Local\Temp\ccHrJnD6.s
+COMPILER_PATH=d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/;d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/bin/
+LIBRARY_PATH=d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/lib/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=i386'
+Linking C executable cmTC_8c3d8.exe
+"D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8c3d8.dir\link.txt --verbose=1
+"D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8c3d8.dir/objects.a
+"D:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_8c3d8.dir/objects.a @CMakeFiles\cmTC_8c3d8.dir\objects1.rsp
+"D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  -v -Wl,--whole-archive CMakeFiles\cmTC_8c3d8.dir/objects.a -Wl,--no-whole-archive -o cmTC_8c3d8.exe -Wl,--out-implib,libcmTC_8c3d8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+Target: mingw32
+Configured with: ../../gcc-4.4.1/configure --prefix=/mingw --build=mingw32 --enable-languages=c,ada,c++,fortran,objc,obj-c++ --disable-nls --disable-win32-registry --enable-libgomp --enable-cxx-flags='-fno-function-sections -fno-data-sections' --disable-werror --enable-threads --disable-symvers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --with-pkgversion='TDM-2 mingw32' --enable-sjlj-exceptions --with-bugurl=http://www.tdragon.net/recentgcc/bugs.php
+Thread model: win32
+gcc version 4.4.1 (TDM-2 mingw32) 
+COMPILER_PATH=d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/;d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/bin/
+LIBRARY_PATH=d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/lib/;d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8c3d8.exe' '-mtune=i386'
+ d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/collect2.exe -Bdynamic -o cmTC_8c3d8.exe d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../crt2.o d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/crtbegin.o -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1 -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/lib -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../.. --whole-archive CMakeFiles\cmTC_8c3d8.dir/objects.a --no-whole-archive --out-implib libcmTC_8c3d8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -luser32 -lkernel32 -ladvapi32 -lshell32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/crtend.o
+mingw32-make.exe[1]: Leaving directory `D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../include]
+    add: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/include]
+    add: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/include-fixed]
+  end of search list found
+  collapse include dir [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../include] ==> [D:/Program Files (x86)/CodeBlocks/MinGW/include]
+  collapse include dir [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/include] ==> [D:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.4.1/include]
+  collapse include dir [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/include-fixed] ==> [D:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.4.1/include-fixed]
+  implicit include dirs: [D:/Program Files (x86)/CodeBlocks/MinGW/include;D:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.4.1/include;D:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.4.1/include-fixed]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):D:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe -f Makefile cmTC_8c3d8/fast && D:/Program Files (x86)/CodeBlocks/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8c3d8.dir\build.make CMakeFiles/cmTC_8c3d8.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory `D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_8c3d8.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"   -v -o CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj -c "D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\share\cmake-3.20\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../../gcc-4.4.1/configure --prefix=/mingw --build=mingw32 --enable-languages=c ada c++ fortran objc obj-c++ --disable-nls --disable-win32-registry --enable-libgomp --enable-cxx-flags='-fno-function-sections -fno-data-sections' --disable-werror --enable-threads --disable-symvers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --with-pkgversion='TDM-2 mingw32' --enable-sjlj-exceptions --with-bugurl=http://www.tdragon.net/recentgcc/bugs.php]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.4.1 (TDM-2 mingw32) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=i386']
+  ignore line: [ d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/cc1.exe -quiet -v -iprefix d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/ D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\share\cmake-3.20\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=i386 -auxbase-strip CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\kfzjw008\AppData\Local\Temp\ccHrJnD6.s]
+  ignore line: [ignoring nonexistent directory "d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/../../../../mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [ignoring duplicate directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../lib/gcc/mingw32/4.4.1/include"]
+  ignore line: [ignoring duplicate directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../lib/gcc/mingw32/4.4.1/include-fixed"]
+  ignore line: [ignoring nonexistent directory "d:/program files (x86)/codeblocks/mingw/lib/gcc/../../lib/gcc/mingw32/4.4.1/../../../../mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/../../../../include]
+  ignore line: [ d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/include]
+  ignore line: [ d:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.4.1/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C (TDM-2 mingw32) version 4.4.1 (mingw32)]
+  ignore line: [	compiled by GNU C version 4.4.1  GMP version 4.3.0  MPFR version 2.4.1.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: cf55188e7d2f640bec71afc62bf8d59d]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=i386']
+  ignore line: [ d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/bin/as.exe -o CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj C:\Users\kfzjw008\AppData\Local\Temp\ccHrJnD6.s]
+  ignore line: [COMPILER_PATH=d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/lib/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_8c3d8.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=i386']
+  ignore line: [Linking C executable cmTC_8c3d8.exe]
+  ignore line: ["D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8c3d8.dir\link.txt --verbose=1]
+  ignore line: ["D:\Program Files\JetBrains\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8c3d8.dir/objects.a]
+  ignore line: ["D:\Program Files (x86)\CodeBlocks\MinGW\bin\ar.exe" cr CMakeFiles\cmTC_8c3d8.dir/objects.a @CMakeFiles\cmTC_8c3d8.dir\objects1.rsp]
+  ignore line: ["D:\Program Files (x86)\CodeBlocks\MinGW\bin\gcc.exe"  -v -Wl --whole-archive CMakeFiles\cmTC_8c3d8.dir/objects.a -Wl --no-whole-archive -o cmTC_8c3d8.exe -Wl --out-implib libcmTC_8c3d8.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../../gcc-4.4.1/configure --prefix=/mingw --build=mingw32 --enable-languages=c ada c++ fortran objc obj-c++ --disable-nls --disable-win32-registry --enable-libgomp --enable-cxx-flags='-fno-function-sections -fno-data-sections' --disable-werror --enable-threads --disable-symvers --enable-version-specific-runtime-libs --enable-fully-dynamic-string --with-pkgversion='TDM-2 mingw32' --enable-sjlj-exceptions --with-bugurl=http://www.tdragon.net/recentgcc/bugs.php]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.4.1 (TDM-2 mingw32) ]
+  ignore line: [COMPILER_PATH=d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/lib/]
+  ignore line: [d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8c3d8.exe' '-mtune=i386']
+  ignore line: [ d:/program files (x86)/codeblocks/mingw/bin/../libexec/gcc/mingw32/4.4.1/collect2.exe -Bdynamic -o cmTC_8c3d8.exe d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../crt2.o d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/crtbegin.o -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1 -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../../../mingw32/lib -Ld:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/../../.. --whole-archive CMakeFiles\cmTC_8c3d8.dir/objects.a --no-whole-archive --out-implib libcmTC_8c3d8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -luser32 -lkernel32 -ladvapi32 -lshell32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt d:/program files (x86)/codeblocks/mingw/bin/../lib/gcc/mingw32/4.4.1/crtend.o]
+  ignore line: [mingw32-make.exe[1]: Leaving directory `D:/lab/c++/SICSA/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
