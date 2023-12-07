@@ -40,7 +40,7 @@ uint8_t g_temporaryMacroTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH]; // 临
 uint8_t g_macroDataTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH];     // 宏数据表
 uint8_t g_macroProgramTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH];   // 宏程序表
 
-//事件表相关
+//事件表相关 1
 #define    EVENT_TAB_STR_ADRS            (0x00020000+MEMORY)    /*事件项表起始地址*/
 #define    EVENT_TAB_END_ADRS            (0x00021FFF+MEMORY)    /*事件项表结束地址*/
 #define    EVENT_SEA_STR_ADRS            (0x00022000+MEMORY)    /*事件检索表起始地址*/
