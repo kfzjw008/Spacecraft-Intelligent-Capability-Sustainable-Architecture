@@ -1,3 +1,0 @@
-/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles/rebuild_cache.dir
-/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles/edit_cache.dir
-/root/CodeCpp/nezha/CISCA2023/build/CMakeFiles/SICSA.dir
