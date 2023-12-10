@@ -40,6 +40,6 @@ uint8_t checkCommandParsingTag();
 uint8_t checkMacroInstructionTag();
 uint8_t checkEventTableTag();
 uint8_t checkOnlineMonitoringTag();
-
+void *ptr;
 uint8_t g_EndlessFLag;//	系统停止标识，0为正常运行，1为停止
 #endif //SICSA_MAIN_H

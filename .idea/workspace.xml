@@ -11,44 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dadb0f88-eb05-4032-a1ba-1c0cccfdc3ba" name="Changes" comment="20231127合并事件表和宏指令分支。20231207">
+    <list default="true" id="dadb0f88-eb05-4032-a1ba-1c0cccfdc3ba" name="Changes" comment="设计和完善Main相关的代码逻辑运行格式。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/c_cpp_properties.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.en.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/query/client-vscode/query.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/cache-v2-c7db37e8d420286790e6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/cmakeFiles-v1-bf536c560535d9836778.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/codemodel-v2-5e28786d56bae42f53f0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/index-2023-11-24T07-53-59-0845.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-SICSA-Debug-69a834c1135d8dfee4c8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SICSA.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global.h" beforeDir="false" afterPath="$PROJECT_DIR$/global.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onboardControlServices/commandParsing.c" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/commandParsing.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboardControlServices/commandParsing.h" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/commandParsing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboardControlServices/dataInjection.c" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/dataInjection.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboardControlServices/dataInjection.h" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/dataInjection.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +66,7 @@
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../研究生/学习/研究内容/【7】电子【结束】/天基数管/源码/TJSG_USED-【0.23=0.2202-校验和】/TJSG_USED" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -150,7 +121,7 @@
       <workItem from="1701066286294" duration="597000" />
       <workItem from="1701167994582" duration="2720000" />
       <workItem from="1701914566898" duration="1079000" />
-      <workItem from="1701936313006" duration="3295000" />
+      <workItem from="1701936313006" duration="24465000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1684217886949</created>
@@ -236,7 +207,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701936378938</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修改readME的中文版和英文版">
+      <created>1702181462342</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702181462342</updated>
+    </task>
+    <task id="LOCAL-00014" summary="设计Main相关的代码逻辑运行格式。">
+      <created>1702187207471</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702187207471</updated>
+    </task>
+    <task id="LOCAL-00015" summary="设计和完善Main相关的代码逻辑运行格式。">
+      <created>1702193932533</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702193932533</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +266,13 @@
     <MESSAGE value="宏指令业务除维护外其他的数据注入指令（未测试）。" />
     <MESSAGE value="20231127合并事件表和宏指令分支。" />
     <MESSAGE value="20231127合并事件表和宏指令分支。20231207" />
-    <option name="LAST_COMMIT_MESSAGE" value="20231127合并事件表和宏指令分支。20231207" />
+    <MESSAGE value="修改readME的中文版和英文版" />
+    <MESSAGE value="设计Main相关的代码逻辑运行格式。" />
+    <MESSAGE value="设计和完善Main相关的代码逻辑运行格式。" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计和完善Main相关的代码逻辑运行格式。" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

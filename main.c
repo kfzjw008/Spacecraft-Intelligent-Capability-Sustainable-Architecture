@@ -123,7 +123,7 @@ void mainInit() {
     // Linux系统使用POSIX共享内存
     int shm_fd = shm_open("my_shared_memory", O_CREAT | O_RDWR, 0666);
     ftruncate(shm_fd, sizeof(SharedData));
-    void *ptr = mmap(0, sizeof(SharedData), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    *ptr = mmap(0, sizeof(SharedData), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
 #elif defined(_WIN64)
     // Windows系统使用Windows API创建共享内存
     HANDLE hMapFile = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0, sizeof(SharedData), "my_shared_memory");
@@ -174,7 +174,8 @@ void writeToDataBuffer(char *content) {
 
 void collectDataCommunication() {
     // 假设SharedData结构定义了flag和content
-    SharedData *sharedData = /* 获取共享内存的指针 */;
+    SharedData *sharedData ;
+    sharedData = (SharedData*)ptr;
 
     if (sharedData->flag == 1) {
         // 将content写入数据缓冲区

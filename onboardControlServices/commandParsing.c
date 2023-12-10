@@ -3,19 +3,6 @@
 //
 
 #include "commandParsing.h"
-#include<iostream>
-#include <stdint.h>
-#include<string.h>
-// #include"global.h"
-// #include"main.c"
-
-using namespace std;
-
-
-
-#define instructionEncodingLength  1//	指令编码长度  单位：字节
-#define instructionRoutingLength  1//	指令路由长度
-#define g_instructionTableLength  (100)//	指令表长度
 
 
 //	指令表
@@ -72,39 +59,41 @@ uint8_t g_macroInstructionBufferCount = 0;// 宏指令缓冲池计数
 
 
 
-uint8_t requestInstructionParsing(uint8_t data[]){
+uint8_t requestInstructionParsing(uint8_t data[]) {
     //21是业务ID，后边的是序号
 
-    if(data[1]  == 128){
+    if (data[1] == 128) {
         //指令表增加一条指令
 
         //将 除前32位后的一条指令 放到指令表中。
-        memcpy(g_instructionTable[g_instructionTableNum ++], &data[2], 2+instructionEncodingLength+instructionRoutingLength);
+        memcpy(g_instructionTable[g_instructionTableNum++], &data[2],
+               2 + instructionEncodingLength + instructionRoutingLength);
 
         return 1;
-    }else if(data[1]  == 129){
+    } else if (data[1] == 129) {
         //删除n条指令：因为指令表无序，这里采取的策略是将指令表末尾的指令填充到当前位置。
         int n = data[2];
-        for(int i = 1;i <= n; i ++){
+        for (int i = 1; i <= n; i++) {
             uint16_t deleteID = data[i * 2 + 1] << 8 && data[(i + 1) * 2]; //获取每一个要删除的指令ID
 
-            for(int i = 0; i < g_instructionTableNum; i ++){ //遍历指令表
-                if(deleteID == g_instructionTable[i][0] << 8 && g_instructionTable[i][1]){//判断ID是否相等
-                    memcpy(g_instructionTable[i], g_instructionTable[g_instructionTableNum--], 2+instructionEncodingLength+instructionRoutingLength);
+            for (int i = 0; i < g_instructionTableNum; i++) { //遍历指令表
+                if (deleteID == g_instructionTable[i][0] << 8 && g_instructionTable[i][1]) {//判断ID是否相等
+                    memcpy(g_instructionTable[i], g_instructionTable[g_instructionTableNum--],
+                           2 + instructionEncodingLength + instructionRoutingLength);
 
                 }
             }
         }
         return 1;
 
-    }else if(data[1]  == 130){
+    } else if (data[1] == 130) {
         //设置n条指令的应用过程识别符
         int n = data[2];
-        for(int i = 1;i <= 4 * n; i += 2){  //每次走2步
+        for (int i = 1; i <= 4 * n; i += 2) {  //每次走2步
             uint16_t alterID = data[i * 2 + 1] << 8 && data[i * 2 + 2]; //获取每一个要修改的指令ID
 
-            for(int i = 0; i < g_instructionTableNum; i += 2){ //遍历指令表
-                if(alterID == g_instructionTable[i][0] << 8 && g_instructionTable[i][1]){//判断ID是否相等
+            for (int i = 0; i < g_instructionTableNum; i += 2) { //遍历指令表
+                if (alterID == g_instructionTable[i][0] << 8 && g_instructionTable[i][1]) {//判断ID是否相等
 
                     g_instructionTable[i][2] = data[i * 2 + 3];
                     g_instructionTable[i][3] = data[i * 2 + 4];
@@ -113,14 +102,14 @@ uint8_t requestInstructionParsing(uint8_t data[]){
         }
         return 1;
 
-    }else if(data[1]  == 131){
+    } else if (data[1] == 131) {
         //设置n条指令的编码
         int n = data[2];
-        for(int i = 1;i <= 2 * n; i += 2){  //每次走2步
+        for (int i = 1; i <= 2 * n; i += 2) {  //每次走2步
             uint16_t alterID = data[i * 2] << 8 && data[i * 2 + 1]; //获取每一个要修改的指令ID
 
-            for(int i = 0; i < g_instructionTableNum; i += 2){ //遍历指令表
-                if(alterID == g_instructionTable[i][0] << 8 && g_instructionTable[i][1]){//判断ID是否相等
+            for (int i = 0; i < g_instructionTableNum; i += 2) { //遍历指令表
+                if (alterID == g_instructionTable[i][0] << 8 && g_instructionTable[i][1]) {//判断ID是否相等
 
                     g_instructionTable[i][4] = data[i * 3];
                     g_instructionTable[i][5] = data[i * 3 + 1];
@@ -129,14 +118,14 @@ uint8_t requestInstructionParsing(uint8_t data[]){
         }
         return 1;
 
-    }else if(data[1]  == 132){
+    } else if (data[1] == 132) {
         //设置n条指令的路由
         int n = data[2];
-        for(int i = 1;i <= 2 * n; i += 2){  //每次走2步
+        for (int i = 1; i <= 2 * n; i += 2) {  //每次走2步
             uint16_t alterID = data[i * 2] << 8 || data[i * 2 + 1]; //获取每一个要修改的指令ID
 
-            for(int i = 0; i < g_instructionTableNum; i += 2){ //遍历指令表
-                if(alterID == g_instructionTable[i][0] << 8 || g_instructionTable[i][1]){//判断ID是否相等
+            for (int i = 0; i < g_instructionTableNum; i += 2) { //遍历指令表
+                if (alterID == g_instructionTable[i][0] << 8 || g_instructionTable[i][1]) {//判断ID是否相等
 
                     g_instructionTable[i][6] = data[i * 3];
                     g_instructionTable[i][7] = data[i * 3 + 1];
@@ -144,8 +133,7 @@ uint8_t requestInstructionParsing(uint8_t data[]){
             }
         }
         return 1;
-    }
-    else return 0;
+    } else return 0;
 
 }
 
@@ -159,24 +147,21 @@ uint8_t requestInstructionParsing(uint8_t data[]){
 
 
 */
-uint8_t instructionParsing(uint8_t data[]){
+uint8_t instructionParsing(uint8_t data[]) {
     //指令ID
     uint16_t instructionID = data[0] << 8 || data[1];
-    if(instructionID >> 8 == 21){//属于请求指令
+    if (instructionID >> 8 == 21) {//属于请求指令
         requestInstructionParsing(data);
         return 1;
-    }else if(){ //需要根据各业务定义的ID进行分类，决定转发还是释放
-        for(int i =0;i < g_instructionTableNum;i++){
-            if(instructionID == *g_instructionTable[0]){
+    } else if () { //需要根据各业务定义的ID进行分类，决定转发还是释放
+        for (int i = 0; i < g_instructionTableNum; i++) {
+            if (instructionID == *g_instructionTable[0]) {
                 printf("当前指令是：+");
             }
         }
 
-    }
-    else return 0; //出错
+    } else return 0; //出错
 }
-
-
 
 
 /*
@@ -189,30 +174,29 @@ uint8_t instructionParsing(uint8_t data[]){
 
 
 */
-uint8_t instructionPacketParsing(uint16_t data[]){
+uint8_t instructionPacketParsing(uint16_t data[]) {
     //指令包数据长度
-    uint16_t instructionPacketLength = data[4] << 8  || data[5];
+    uint16_t instructionPacketLength = data[4] << 8 || data[5];
 
     //执行方式类型编码  占1字节？
     uint8_t executionType = data[6];
 
 
-
-    if(executionType == 0xF0){ //立即指令,调用指令解析函数立即执行
-        for(int i = 0; i < instructionPacketLength; i ++){
+    if (executionType == 0xF0) { //立即指令,调用指令解析函数立即执行
+        for (int i = 0; i < instructionPacketLength; i++) {
             instructionParsing(data[7 + i]); //下标有问题，期望参数是一条指令
         }
 
-    }else if(executionType == 0xF1 || executionType == 0xF2 || executionType == 0xF3 || executionType == 0xF9 || executionType == 0xFA || executionType == 0xFB){ //延时指令
+    } else if (executionType == 0xF1 || executionType == 0xF2 || executionType == 0xF3 || executionType == 0xF9 ||
+               executionType == 0xFA || executionType == 0xFB) { //延时指令
 
         memcpy(g_eventTableBuffer[g_eventTableBufferCount++], &data[7], instructionPacketLength - 7);
-    }else if(executionType == 0xF4 || executionType == 0xF5 || executionType == 0xF6){ //宏指令
+    } else if (executionType == 0xF4 || executionType == 0xF5 || executionType == 0xF6) { //宏指令
         memcpy(g_macroInstructionBuffer[g_macroInstructionBufferCount++], &data[7], instructionPacketLength - 7);
-    }
-    else if(executionType == 0xFC){ //任务级指令
+    } else if (executionType == 0xFC) { //任务级指令
         //暂不考虑
         printf("任务级指令");
-    }else
+    } else
 
         return 0;
 }

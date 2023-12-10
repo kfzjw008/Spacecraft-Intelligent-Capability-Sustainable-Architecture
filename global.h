@@ -18,8 +18,34 @@ uint8_t OnlineMonitoringTag;
 
 /*************常量大全*********************/
 #define        CONTENT_SIZE                (1000)    /*套接字读取最大长度*/
+#define  INJECTDATA_SIZE                            (256)        /*数据注入一次的长度（字节）*/
+#define  MAX_INJECT_PKG_LEN                         (128)       /*注入包最长长度*/
+#define  MAX_INJECT_BUFFER_NUM                      (10)        /*注入包缓冲区最大个数*/
+#define instructionEncodingLength  (1)//	指令编码长度  单位：字节
+#define instructionRoutingLength  (1)//	指令路由长度
+#define g_instructionTableLength  (100)//	指令表长度
 
 
+/*************内存区域定义*********************/
+uint8_t g_InjectionTempPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包临时缓冲区
+uint8_t g_InjectionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包缓冲区
+uint8_t g_instructionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];
+
+
+/*************内存区域指针*********************/
+int g_InjectionTempPacketBufferPointer = 0;//指针
+
+
+
+/*************内存分配*********************/
+#define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址*/
+#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址*/
+
+
+/*************遥测参数*********************/
+uint16_t g_injectionPacketRxCount;//	注入包接收计数
+uint16_t g_injectionFrameRxCount;//	注入帧接收计数
+uint16_t g_injectionSequenceOrChecksumArray;//	注入序号或校验和数组
 
 
 
@@ -30,11 +56,8 @@ uint8_t OnlineMonitoringTag;
 
 
 /*************常用宏定义*********************/
-#define  INJECTDATA_SIZE                            (256)        /*数据注入一次的长度（字节）*/
-#define  MAX_INJECT_PKG_LEN                         (128)       /*注入包最长长度*/
-#define  MAX_INJECT_BUFFER_NUM                      (10)        /*注入包缓冲区最大个数*/
-#define    MONI_ZRB_STR_ADRS            (0x0000A000+MEMORY)    /*注入包缓冲区起始地址*/
-#define    MONI_ZRB_END_ADRS            (0x0000BFFF+MEMORY)    /*注入包缓冲区结束地址*/
+
+
 #define    PLAN_OUT_STR_ADRS            (0x0000C000+MEMORY)    /*任务规划输出结果起始地址*/
 #define    PLAN_OUT_END_ADRS            (0x0000CFFF+MEMORY)    /*任务规划输出结果结束地址*/
 #define    PLAN_TAB_STR_ADRS            (0x0000D000+MEMORY)    /*任务规划表起始地址*/
@@ -52,10 +75,10 @@ uint8_t OnlineMonitoringTag;
 #define    MACR_TAB_END_ADRS            (0x00011FFF+MEMORY)    /*宏指令库表结束地址*/
 #define    MACR_LSH_STR_ADRS            (0x00012000+MEMORY)    /*宏指令库表起始地址*/
 #define    MACR_LSH_END_ADRS            (0x00013FFF+MEMORY)    /*宏指令库表结束地址*/
-#define    MACR_HSJ_STR_ADRS            (0x00014000+MEMORY)    /*宏指令库表起始地址*/
-#define    MACR_HSJ_END_ADRS            (0x00015FFF+MEMORY)    /*宏指令库表结束地址*/
-#define    MACR_HCX_STR_ADRS            (0x00016000+MEMORY)    /*宏指令库表起始地址*/
-#define    MACR_HCX_END_ADRS            (0x00017FFF+MEMORY)    /*宏指令库表结束地址*/
+#define    MACR_HSJ_STR_ADRS            (0x00014000+MEMORY)    /*宏数据表起始地址*/
+#define    MACR_HSJ_END_ADRS            (0x00015FFF+MEMORY)    /*宏数据表结束地址*/
+#define    MACR_HCX_STR_ADRS            (0x00016000+MEMORY)    /*宏程序表起始地址*/
+#define    MACR_HCX_END_ADRS            (0x00017FFF+MEMORY)    /*宏程序表结束地址*/
 #define MAX_MACRO_LENGTH 100 // 每条宏指令的最大长度
 #define MACRO_INSTRUCTION_COUNT 81 // 宏指令库可以存储的宏指令数量
 uint16_t g_macroInstructionTable[MACRO_INSTRUCTION_COUNT][MAX_MACRO_LENGTH]; // 宏指令库（宏序列）
@@ -85,8 +108,6 @@ uint16_t g_injectionSequenceOrChecksumArray;//	注入序号或校验和数组
 uint16_t g_instructionPool;//	指令池
 uint16_t g_instructionPoolNum;//
 uint16_t g_instructionTable;//	指令表
-uint16_t instructionEncodingLength;//	指令编码长度
-uint16_t instructionRoutingLength;//	指令路由长度
 uint16_t g_instructionTableNum;//	指令表计数
 uint16_t g_instructionTableNumID;//	指令表ID计数
 uint16_t g_instructionCount;//	指令个数
