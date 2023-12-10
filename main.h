@@ -4,6 +4,12 @@
 
 #ifndef SICSA_MAIN_H
 #define SICSA_MAIN_H
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include "test/testConsole.h"
+#include "global.h"
+#include "windowsUtil.h"
 #include "onboardControlServices/commandParsing.h"
 #include "onboardControlServices/dataInjection.h"
 #include "onboardControlServices/eventTable.h"

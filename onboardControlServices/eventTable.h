@@ -14,6 +14,7 @@
 void FormEventTable();
 void feventTableMain();
 void feventTableInit();
+void feventTableEnd(); // 清理事件表模块资源
 
 
 

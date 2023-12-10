@@ -11,6 +11,7 @@
 #include <stdint.h>
 void fdataInjectionInit();
 void fdataInjectionMain();
+void fdataInjectionEnd(); // 清理数据注入模块资源
 void injectionPacketReception(uint8_t data[], uint16_t size);
 uint16_t packetIdentification(uint8_t *data, uint16_t size);
 

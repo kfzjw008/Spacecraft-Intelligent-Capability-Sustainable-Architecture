@@ -16,10 +16,8 @@ uint8_t OnlineMonitoringTag;
 
 
 
-
-
-
-
+/*************常量大全*********************/
+#define        CONTENT_SIZE                (1000)    /*套接字读取最大长度*/
 
 
 

@@ -9,6 +9,7 @@
 #include <stdint.h>
 void fmacroInstructionInit();
 void fmacroInstructionMain();
+void fmacroInstructionEnd(); // 清理宏指令模块资源
 uint8_t addMacroInstruction(uint8_t id, uint8_t type, uint8_t checksum, uint16_t length, uint8_t *content);
 void initializeMacroInstructionTable();
 uint8_t addMacro(uint8_t id, uint8_t release, uint8_t delete, uint8_t sequence, uint8_t data, uint8_t program,
