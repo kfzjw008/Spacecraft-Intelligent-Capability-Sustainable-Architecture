@@ -6,6 +6,31 @@
 #ifndef SICSA_GLOBAL_H
 #define SICSA_GLOBAL_H
 
+
+/*************Flag大全*********************/
+uint8_t DataInjectionTag;
+uint8_t CommandParsingTag;
+uint8_t MacroInstructionTag;
+uint8_t EventTableTag;
+uint8_t OnlineMonitoringTag;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************常用宏定义*********************/
 #define  INJECTDATA_SIZE                            (256)        /*数据注入一次的长度（字节）*/
 #define  MAX_INJECT_PKG_LEN                         (128)       /*注入包最长长度*/

@@ -9,7 +9,8 @@
 #define APPLICATION_PROCESS_ID_WITHOUT_SECONDARY_HEADER 0x1334
 #define APPLICATION_PROCESS_ID_WITH_SECONDARY_HEADER 0x1B34
 #include <stdint.h>
-
+void fdataInjectionInit();
+void fdataInjectionMain();
 void injectionPacketReception(uint8_t data[], uint16_t size);
 uint16_t packetIdentification(uint8_t *data, uint16_t size);
 

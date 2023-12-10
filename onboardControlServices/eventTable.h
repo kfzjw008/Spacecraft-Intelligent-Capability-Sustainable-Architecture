@@ -12,11 +12,12 @@
 
 
 void FormEventTable();
+void feventTableMain();
+void feventTableInit();
 
 
 
-
-/ 假设的辅助函数，需要根据实际情况实现
+// 假设的辅助函数，需要根据实际情况实现
 uint32_t GetCurrentSystemTime(); // 获取当前系统时间
 
 volatile bool loopTimingActive = false;// 全局变量，控制循环定时
