@@ -4,12 +4,22 @@
 
 #ifndef SICSA_MACROINSTRUCTION_H
 #define SICSA_MACROINSTRUCTION_H
-
-
+/*************主要头文件*********************/
 #include <stdint.h>
+#include<string.h>
+#include <stdio.h>
+#include"../global.h"
+#include <malloc.h>
+#include <stdbool.h>
+#include "macroInstruction.h"
+/*#include "logLib.h"*/
+#include "../util.h"
+/*************业务函数*********************/
 void fmacroInstructionInit();
 void fmacroInstructionMain();
 void fmacroInstructionEnd(); // 清理宏指令模块资源
+
+/*************主要函数*********************/
 uint8_t addMacroInstruction(uint8_t id, uint8_t type, uint8_t checksum, uint16_t length, uint8_t *content);
 void initializeMacroInstructionTable();
 uint8_t addMacro(uint8_t id, uint8_t release, uint8_t delete, uint8_t sequence, uint8_t data, uint8_t program,
@@ -23,6 +33,10 @@ uint8_t batchModifyMacroDisallowRelease(uint8_t n, uint8_t *ids, uint8_t rangeTy
 uint8_t modifyMacroDelete(uint8_t id, uint8_t allowRelease);
 uint8_t batchDeleteMacroRelease(uint8_t n, uint8_t *ids, uint8_t rangeType);
 uint8_t batchDeleteMacroDisallowRelease(uint8_t n, uint8_t *ids, uint8_t rangeType);
+/*************业务参数*********************/
+
+
+
 
 
 

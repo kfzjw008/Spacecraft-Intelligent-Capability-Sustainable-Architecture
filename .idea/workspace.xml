@@ -13,11 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dadb0f88-eb05-4032-a1ba-1c0cccfdc3ba" name="Changes" comment="设计和完善事件表的代码逻辑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.h" beforeDir="false" afterPath="$PROJECT_DIR$/global.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboardControlServices/commandParsing.c" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/commandParsing.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboardControlServices/commandParsing.h" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/commandParsing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboardControlServices/eventTable.c" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/eventTable.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboardControlServices/eventTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/eventTable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboardControlServices/macroInstruction.c" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/macroInstruction.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboardControlServices/macroInstruction.h" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/macroInstruction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboardControlServices/onlineMonitoring.h" beforeDir="false" afterPath="$PROJECT_DIR$/onboardControlServices/onlineMonitoring.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <workItem from="1701066286294" duration="597000" />
       <workItem from="1701167994582" duration="2720000" />
       <workItem from="1701914566898" duration="1079000" />
-      <workItem from="1701936313006" duration="39471000" />
+      <workItem from="1701936313006" duration="43619000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1684217886949</created>
@@ -233,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702235997158</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="设计和完善事件表的代码逻辑">
+      <created>1702341994499</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702341994499</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

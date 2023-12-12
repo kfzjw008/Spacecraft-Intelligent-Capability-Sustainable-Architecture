@@ -5,6 +5,13 @@
 #ifndef SICSA_ONLINEMONITORING_H
 #define SICSA_ONLINEMONITORING_H
 
+/*************主要头文件*********************/
+#include <stdint.h>
+#include<string.h>
+#include <stdio.h>
+#include"../global.h"
+#include <malloc.h>
+#include <stdbool.h>
 
 void fMonitorInit(void);
 void fMonitor(void);
