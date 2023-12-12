@@ -5,7 +5,16 @@
 
 #ifndef SICSA_GLOBAL_H
 #define SICSA_GLOBAL_H
-
+/*************内存读写定义*********************/
+//4字节读写定义
+#define outpDw(addr, data)   (MEMORY[addr] = data)/*#define	outpDw(port, data)						(*( unsigned int *)(port) = (data) )*/
+#define inpDw(addr)         ((unsigned int)(*(volatile unsigned int*)(addr+MEMORY)))
+//2字节读写定义
+#define outpW(addr, data)   (*((volatile uint16_t*)(MEMORY + (addr))) = (data))
+#define inpW(addr)          (*((volatile uint16_t*)(MEMORY + (addr))))
+//1字节读写定义
+#define outpB(addr, data)   (*((volatile uint8_t*)(MEMORY + (addr))) = (data))
+#define inpB(addr)          (*((volatile uint8_t*)(MEMORY + (addr))))
 
 /*************Flag大全*********************/
 uint8_t DataInjectionTag;
@@ -17,19 +26,36 @@ uint8_t OnlineMonitoringTag;
 
 
 /*************常量大全*********************/
-#define        CONTENT_SIZE                (1000)    /*套接字读取最大长度*/
+#define  CONTENT_SIZE                (1000)    /*套接字读取最大长度*/
 #define  INJECTDATA_SIZE                            (256)        /*数据注入一次的长度（字节）*/
 #define  MAX_INJECT_PKG_LEN                         (128)       /*注入包最长长度*/
 #define  MAX_INJECT_BUFFER_NUM                      (10)        /*注入包缓冲区最大个数*/
-#define instructionEncodingLength  (1)//	指令编码长度  单位：字节
-#define instructionRoutingLength  (1)//	指令路由长度
-#define g_instructionTableLength  (100)//	指令表长度
+#define  instructionEncodingLength  (1)//	指令编码长度  单位：字节
+#define  instructionRoutingLength  (1)//	指令路由长度
+#define  g_instructionTableLength  (100)//	指令表长度
+#define  g_instructionPackageMaxLength  (256) //一条指令包数据不超过256字节
+#define  g_eventTableBufferMaxLength  (1000) //指令解析与时间表业务池不超过1000数据
+#define  g_macroInstructionBufferMaxLength  (1000) //指令解析与宏指令业务池不超过1000数据
+
+
+
 
 
 /*************内存区域定义*********************/
 uint8_t g_InjectionTempPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包临时缓冲区
 uint8_t g_InjectionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];//	注入包缓冲区
 uint8_t g_instructionPacketBuffer[MAX_INJECT_BUFFER_NUM][MAX_INJECT_PKG_LEN];
+uint16_t g_instructionTable[2 + instructionEncodingLength + instructionRoutingLength][g_instructionTableLength];
+uint8_t g_eventTableBuffer[g_instructionPackageMaxLength][g_eventTableBufferMaxLength];//事件表缓冲区
+uint8_t g_macroInstructionBuffer[g_instructionPackageMaxLength][g_macroInstructionBufferMaxLength];//宏指令缓冲区
+
+
+
+/*************内存区域写入标记*********************/
+uint8_t g_eventTableBufferCount = 0;// 事件表计数
+uint8_t g_macroInstructionBufferCount = 0;// 宏指令缓冲池计数
+
+
 
 
 /*************内存区域指针*********************/
@@ -43,13 +69,25 @@ int g_InjectionTempPacketBufferPointer = 0;//指针
 
 
 /*************遥测参数*********************/
+//管控能力
 uint16_t g_injectionPacketRxCount;//	注入包接收计数
 uint16_t g_injectionFrameRxCount;//	注入帧接收计数
 uint16_t g_injectionSequenceOrChecksumArray;//	注入序号或校验和数组
-
-
-
-
+uint16_t g_instructionCount;//	指令个数
+uint16_t g_instructionReleaseCount;//	指令释放计数
+uint16_t g_instructionForwardCount;//	指令转发计数
+uint16_t g_pendingEventCount;//	待执行事件计数
+uint16_t g_appendedEventCount;//	追加事件计数
+uint16_t g_currentEventItemID;//	当前事件项ID
+uint16_t g_MacroInstructionCount;//	宏指令个数
+uint16_t g_NextAvailableMacroInstructionNumber;//	下一个可分配的宏指令序号
+uint16_t g_TemporaryMacroInstructionGenerationCount;//	临时宏指令生成个数
+uint16_t g_monitoredParametersNum;//	监视参数个数
+uint16_t g_monitoringStatus;//	监视状态
+uint16_t g_actionStatus;//	动作状态
+uint16_t g_actionCount;//	动作计数
+uint16_t g_totalActionCount;//	动作总计数
+uint16_t g_countdownExceedLimit;//	超限倒计数
 
 
 
@@ -110,33 +148,22 @@ uint16_t g_instructionPoolNum;//
 uint16_t g_instructionTable;//	指令表
 uint16_t g_instructionTableNum;//	指令表计数
 uint16_t g_instructionTableNumID;//	指令表ID计数
-uint16_t g_instructionCount;//	指令个数
-uint16_t g_instructionReleaseCount;//	指令释放计数
-uint16_t g_instructionForwardCount;//	指令转发计数
+
 uint16_t g_instructionParsingAndExecutionOperationFlag;//	指令解析和执行操作标识
 uint16_t g_eventSearchTable;//	事件检索表
 uint16_t g_eventItemTable;//	事件项表
 uint16_t g_eventTableCapacity;//	事件表容量
-uint16_t g_pendingEventCount;//	待执行事件计数
-uint16_t g_appendedEventCount;//	追加事件计数
-uint16_t g_currentEventItemID;//	当前事件项ID
+
 uint16_t g_eventCount;//	事件表项数
 
 
 uint16_t g_macroInstructionLookupTable_SE;//	宏指令检索表-序列
-uint16_t g_MacroInstructionCount;//	宏指令个数
-uint16_t g_NextAvailableMacroInstructionNumber;//	下一个可分配的宏指令序号
-uint16_t g_TemporaryMacroInstructionGenerationCount;//	临时宏指令生成个数
+
 uint16_t g_macroInstructionLookupTable_DA;//	宏指令检索表-数据
 uint16_t g_macroInstructionLookupTable_PR;//	宏指令检索表-程序
 uint16_t g_macroInstructionLookupTable_TE;//	宏指令检索表-临时
 uint16_t g_parameterMonitoringTable;//	参数监视表
-uint16_t g_monitoredParametersNum;//	监视参数个数
-uint16_t g_monitoringStatus;//	监视状态
-uint16_t g_actionStatus;//	动作状态
-uint16_t g_actionCount;//	动作计数
-uint16_t g_totalActionCount;//	动作总计数
-uint16_t g_countdownExceedLimit;//	超限倒计数
+
 uint16_t g_ingectSize;//注入数据长度
 //到此为止，以上为所有文档内函数
 /*uint16_t*	g_pui8MoniTablePoint;*/        /*在线监控表指针*/
@@ -175,8 +202,6 @@ unsigned short g_usSlowEngBuf[64];
 #define     MAX_MEMORY_SIZE               (0x000FFFFF)        /*转发在线监控立即指令单条最大长度字数*/
 int MEMORYSize;//内存大小，单位是字节
 uint8_t *MEMORY;//虚拟存储首地址
-#define outpDw(addr, data)   (MEMORY[addr] = data)/*#define	outpDw(port, data)						(*( unsigned int *)(port) = (data) )*/
-#define inpDw(addr)         ((unsigned int)(*(volatile unsigned int*)(addr+MEMORY)))
 
 
 
